@@ -5,16 +5,16 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.fontSize = "16px";
-    $(".logo").width(66).height(90); 
-    $('header').height('15vh');
+    document.getElementById("header").style.fontSize = "14px";
+    $(".logo").width(53).height(72); 
+    $('header').height('12vh');
     
 
 
   } else {
-    document.getElementById("header").style.fontSize = "20px";
-    $(".logo").width(88).height(120); 
-    $('header').height('18vh');
+    document.getElementById("header").style.fontSize = "18px";
+    $(".logo").width(66).height(90); 
+    $('header').height('14vh');
   }
 }
 
