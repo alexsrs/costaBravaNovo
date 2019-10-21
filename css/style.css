@@ -310,7 +310,7 @@ section.secao-2{
 
 }
 
-.secao-2 img{
+.secao-2 iframe{
 	position: relative;
 	top: 20px;
 	width: 60%;
@@ -331,9 +331,11 @@ section.secao-3{
 	padding: 140px 2% 50px 2%;
 	color: white;
 	text-align: left;
-	height: 380px;
+	height: 480px;
 
 }
+
+
 
 .side-left h2{
 	/*font-style: italic;*/
@@ -351,11 +353,47 @@ section.secao-3{
 
 
 .side-left-wrapper{
-	max-width: 400px;
+	max-width: 600px;
 	float: right;
 	padding-right: 30px;
 	height: 100%;
 }
+
+.eventos-container{
+	transition: .3s;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+   	padding-top: 100%;
+    
+    
+    border: 1px solid #eee;
+}
+
+.eventos-container .img{
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50%;
+   padding-top: 50%;
+    background-position: center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.eventos-container .text{
+    float: right;
+    padding: 30px 20px 30px 53%;
+}
+
+
+
+
+
 
 .side-right{
 	width: 50%;
@@ -440,6 +478,7 @@ section.secao-3{
 	padding-right: 30px;
 
 }
+
 
 
 /*FIM DA SEÇÂO EVENTOS*/
