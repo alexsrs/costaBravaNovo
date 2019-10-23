@@ -34,10 +34,7 @@ width: 100%; /* Full width */
 transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
 z-index: 999;
 }
-}
 
-
-}
 
 header nav{
 	float: right;
@@ -195,7 +192,7 @@ section.oclube {
 	
 	width: 100%;
 	height: auto;
-	background-color: #F2F2F2;
+	background-color: #ffffff
 	padding: 2%;
 }
 
@@ -283,9 +280,11 @@ section.oclube .oclube-wrapper p{
 
 /*FIM DA SEÇÂO Eventos*/
 
+/*Seção videos*/
+
 section.secao-2{
 	padding: 0px 2% 0 2%;
-	background-color: white;
+	background-color: #F2F2F2;
 	text-align: center;
 }
 
@@ -299,20 +298,28 @@ section.secao-2{
 	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 
+
+/*Fim da seção Videos*/
+
+/*Inicio da seção eventos*/
+
 section.secao-3{
 
 	width: 100%;
+	height: auto;
 	
 }
+
+/*Lado ESQUERDO*/
 
 .side-left{
 	width: 50%;
 	float: left;
 	background-color: #4B944D;
-	padding: 70px 2% 50px 2%;
+	padding: 70px 2% 85px 2%;
 	color: white;
 	text-align: left;
-	height: auto;
+	height: 100%;
 
 }
 
@@ -333,6 +340,14 @@ section.secao-3{
 	margin: 2% 0%;
 }
 
+.side-left-wrapper h4 {
+    font-size: 20px;
+    color: #f86f00;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    text-align: left;
+}
+
 .side-left-wrapper p{
 	font-family: 'Noto Sans KR', sans-serif;
 	padding-top: 4%;
@@ -344,15 +359,16 @@ section.secao-3{
 }
 
 
+
+
 .eventos-container{
 	transition: .3s;
     display: block;
     position: relative;
     float: left;
-    width: 100%;
-   	
-   	
-    border: 1px solid #DCF2E6;
+    width: 100%;	
+   /* border: 1px solid #DCF2E6;  */
+    background-color: #FFFFFF;
     margin-top: 5%;
 }
 
@@ -364,7 +380,6 @@ section.secao-3{
     left: 0;
     z-index: 1;
     width: 40%;
-	
 	height: 100%;
     background-position: left;
     -moz-background-size: contain;
@@ -381,41 +396,224 @@ section.secao-3{
     height: auto;
    }
 
+.eventos-text h3{
+	color: #4D4D4D;
+}
+
+.eventos-text p{
+	color: #4D4D4D;
+	line-height: 175%;
+	font-size: 14px;
+}
+
+/* FIm do Lado ESQUERDO*/
 
 
-
-
+/*Lado DIREITO*/
 
 .side-right{
 	width: 50%;
 	float: left;
-	background: #DCF2E6;
-	padding: 140px 2% 50px 2%;
-	color: black;
+	background-color: #DCF2E6;
+	padding: 70px 2% 50px 2%;
+	color: #4D4D4D;
+	text-align: left;
+	height: auto;
+}
+
+.side-right h3{
+
+	font-family: 'Gruppo', cursive;
+	font-size: 32px;
+	color: #4B944D;
+	text-align: left;
+	margin: 2% 0%;
+}
+
+.side-right p{
+	font-family: 'Noto Sans KR', sans-serif;
+	padding-top: 4%;
+	font-size: 16px;
+	color: #4D4D4D;
+	text-align: justify;
+	padding: 4% 4%;
+	line-height: 175%;
+}
+
+
+
+
+.aconteceu {
+	/*max-width: 600px;*/
+	padding-left: 30px;
+	max-width: 600px;
+	float: left;
+	height: 100%;
+}
+
+.aconteceu-wrapper{
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.aconteceu-single{
+	float: left;
+	max-width: 600px;
+	padding-right: 30px;
+	text-align:center;
+}
+
+.aconteceu-image{
+	margin-left: 20%;
+	margin-top: 4%;
+	width: 60%;
+	background-color: #DCF2E6; /* Used if the image is unavailable */
+	height: 260px; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: contain; /* Resize the background image to cover the entire container */    
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.aconteceu-single h4{
+	padding-top: 4%;
+	text-align: center;
+	font-size: 20px;
+    color: #f86f00;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+	
+}
+
+.aconteceu-single p{
+	font-family: 'Noto Sans KR', sans-serif;
+	padding-top: 2%;
+	font-size: 14px;
+	color: #4D4D4D;
+	text-align: justify;
+	line-height: 175%;
+	padding-left: 8%;
+	padding-right: 8%;
+
+}
+
+.maisButton {
+	box-shadow: 0px 10px 14px -7px #8EC090;
+	background:linear-gradient(to bottom, #4B944D 5%, #5EBB62 100%);
+	background-color:#4B944D;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #8EC090;
+}
+.maisButton:hover {
+	background:linear-gradient(to bottom, #5EBB62 5%, #4B944D 100%);
+	background-color:#5EBB62;
+}
+.maisButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* FIm do Lado ESQUERDO*/
+ 
+
+/*FIM DA SEÇÂO EVENTOS*/
+
+section.contatos{
+	display: inline-block;
+	width: 100%;
+	
+	padding: 5% 0;
+}
+
+.contato-left{
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding: 0 4%;
+}
+
+.form-control{
+	display: inline-block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-half{
+	float: left;
+	width: 50%;
+}
+
+.form-half:first-child{
+	padding-right: 30px;
+}
+
+.form-group{
+	padding-bottom: 30px;
+}
+
+.form-group input{
+
+}
+
+.form-group textarea{
 	height: auto;
 	
 }
 
-.scrollEquipe {
-	/*max-width: 600px;*/
-	padding-left: 30px;
-	overflow: hidden;
+.submit-button .btn{
+	box-shadow: 0px 10px 14px -7px #8EC090;
+	background:linear-gradient(to bottom, #4B944D 5%, #5EBB62 100%);
+	background-color:#4B944D;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #8EC090;
 }
 
-.scrollEquipe-wrapper{
-	width: 100%;
-}
 
-.side-right-wrapper{
+.contato-right{
+	width: 50%;
 	float: left;
-	max-width: 500px;
-	padding-right: 30px;
+	text-align: center;
+}
+.map{
+	text-align: center;
+}
 
+.mapa iframe{
+	box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.25);
 }
 
 
 
-/*FIM DA SEÇÂO EVENTOS*/
 
 
 footer{
