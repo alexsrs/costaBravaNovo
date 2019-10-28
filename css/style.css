@@ -113,42 +113,26 @@ section.section1{
 
 .slider .titulo-autor {
 	height: 100%;
-	float: left;
+
+
+
+
+	
 }
+
+
 
 .slider .titulo-autor h2{
-	font-weight: 300;
-	/*font-style: italic;*/
-	font-size: 18px;
-	width: 100%;
-}
-
-.slider .titulo-autor h3{
-	font-style: italic;
-	font-weight: 300;
-	font-size: 12px;
-}
-
-.slider .img-autor{
 	
-	height: 64px;
-	background-repeat: no-repeat;
-	float: left;
-	width: 64px;
-	margin-right: 30px;
-	/*position: relative;*/
-	top: -6px;
-}
-
-
-
-.slider .texto-autor p{
-	font-weight: 300;
-	font-style: italic;
-	font-size: 16px;
-	float: left;
-	margin-top: 10px;
-	text-align: justify;
+	/*font-style: italic;*/
+	font-size: 60px;
+	width: 100%;
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
+	color: white;
+	padding-top: 15%;
+	text-shadow: black 0.1em 0.1em 0.2em
+	
 }
 
 .slider-bullets{
@@ -264,6 +248,8 @@ section.oclube .oclube-card{
 	background-color: white;
 	box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.25);
 	height:100%;
+	
+
 	cursor: pointer;
 }
 
@@ -282,6 +268,7 @@ section.oclube .oclube-texto{
 	background-color: white;
 	padding: 4%;
 	height: 100%;
+	position: relative;
 }
 
 section.oclube .oclube-wrapper h4{
@@ -474,7 +461,7 @@ section.secao-3{
 	width: 50%;
 	float: left;
 	background-color: #DCF2E6;
-	padding: 70px 2% 50px 2%;
+	padding: 50px 2% 50px 2%;
 	color: #4D4D4D;
 	text-align: left;
 	height: auto;
@@ -514,38 +501,40 @@ section.secao-3{
 	text-align: center;
 	width: 100%;
 	height: auto;
+
 }
 
 .aconteceu-single{
+	display: block;
 	float: left;
 	max-width: 600px;
 	padding-right: 30px;
 	text-align:center;
 }
 
-.aconteceu-image{
+.aconteceu-image{ 
 	margin-left: 20%;
 	margin-top: 4%;
 	width: 60%;
-	background-color: #DCF2E6; /* Used if the image is unavailable */
-	height: 260px; /* You must set a specified height */
-	background-position: center; /* Center the image */
-	background-repeat: no-repeat; /* Do not repeat the image */
-	background-size: contain; /* Resize the background image to cover the entire container */    
-	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	background-color: #DCF2E6;
+	height: 260px; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: contain; 
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75); 
 }
 
-.aconteceu-single h4{
+.aconteceu-single h4{ 
 	padding-top: 4%;
 	text-align: center;
 	font-size: 20px;
     color: #f86f00;
     font-family: 'Noto Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 700; 
 	
 }
 
-.aconteceu-single p{
+.aconteceu-single p{ 
 	font-family: 'Noto Sans KR', sans-serif;
 	padding-top: 2%;
 	font-size: 14px;
