@@ -659,26 +659,6 @@ section.contatos{
 	box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.25);
 }
 
-/* Pagina o clube começa aqui */
-
-section.timeline{
-	width: 100%;
-	height: auto;
-	padding: 14vh 0 0 0;
-
-}
-
-section.timeline .container{
-	padding: 3%;
-}
-
-
-
-
-/* Pagina o clube termina aqui */
-
-
-
 footer{
    
     width: 100%;
@@ -700,7 +680,7 @@ footer p {
 }
 
 .rodape-left p{
-	
+		
 
 	font-family: 'Noto Sans KR', sans-serif;
 	padding-top: 2%;
@@ -731,7 +711,7 @@ footer p {
 .rodape-left{
 	/*background-color: red;*/
 	width: 50%;
-	float: right;
+	float: left;
 	padding-bottom: 2%;
 	padding-top: 2%;
 }
@@ -739,7 +719,7 @@ footer p {
 .rodape-right{
 	/*background-color: blue;*/
 	width: 50%;
-	float: left;
+	float: right;
 	padding-bottom: 2%;
 	padding-top: 2%;
 }
