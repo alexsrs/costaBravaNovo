@@ -23,10 +23,10 @@ header{
 
 width: 100%;
 height: 14vh;
-
+font-family: Helvetica, sans-serif;
 background-color: #FFFFFF; /* Grey background */
 
-font-size: 16px; /* Big font size */
+font-size: 14px; /* Big font size */
 font-weight: bold;
 position: fixed; /* Fixed position - sit on top of the page */
 top: 0;
@@ -61,20 +61,22 @@ nav.mobile-menu{
 }
 
 .prev-tempo{
-	transform: translate(-70%, -80%);
-  	-ms-transform: translate(-90%, -80%);
+	position: relative;
+	transform: translate(-30%, -150%);
+  	-ms-transform: translate(-30%, -150%);
 	float: right;
-	padding-top: 30px;
+	margin-top: 30px;
+	margin-bottom: 3px;
 }
 
 .prev-tempo img{
-	margin-left: 10px;
+	margin-left: 3px;
 }
 
 header nav.desktop-menu ul{
 	float: right;
 	list-style-type: none;
-	padding: 40px 10px; /* Some padding */
+	padding: 20px 10px; /* Some padding */
 }
 
 header nav.desktop-menu li {
@@ -83,8 +85,12 @@ header nav.desktop-menu li {
 }
 
 header nav.desktop-menu li a{
-	text-decoration: none;
-	color: #000000;
+  text-decoration: none;
+  color: #414040;
+}
+
+header nav.desktop-menu li a:hover{
+  color: #4B944D;
 }
 
 
@@ -113,11 +119,6 @@ section.section1{
 
 .slider .titulo-autor {
 	height: 100%;
-
-
-
-
-	
 }
 
 
@@ -658,6 +659,25 @@ section.contatos{
 	box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.25);
 }
 
+/* Pagina o clube começa aqui */
+
+section.timeline{
+	width: 100%;
+	height: auto;
+	padding: 14vh 0 0 0;
+
+}
+
+section.timeline .container{
+	padding: 3%;
+}
+
+
+
+
+/* Pagina o clube termina aqui */
+
+
 
 footer{
    
@@ -679,6 +699,35 @@ footer p {
 	
 }
 
+.rodape-left p{
+	
+
+	font-family: 'Noto Sans KR', sans-serif;
+	padding-top: 2%;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	line-height: 125%;
+	padding-left: 8%;
+	padding-right: 8%;
+	
+}
+
+.rodape-right p{
+	
+
+	font-family: 'Noto Sans KR', sans-serif;
+	padding-top: 2%;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	line-height: 125%;
+	padding-left: 8%;
+	padding-right: 8%;
+	
+}
+
+
 .rodape-left{
 	/*background-color: red;*/
 	width: 50%;
@@ -695,12 +744,7 @@ footer p {
 	padding-top: 2%;
 }
 
-
-
-
-
-
-@media screen and (max-width: 768px){
+@media screen and (max-width: 822px){
 	header{
 		height: 100%;
 	}
@@ -756,3 +800,8 @@ footer p {
 	nav.desktop-menu{
 		display: none;s
 	}
+
+	.prev-tempo{
+	display: none;
+}
+}

@@ -8,11 +8,12 @@ function scrollFunction() {
     document.getElementById("header").style.fontSize = "14px";
     $(".logo").width(53).height(72); 
     $('header').height('12vh');
+
     
 
 
   } else {
-    document.getElementById("header").style.fontSize = "18px";
+    document.getElementById("header").style.fontSize = "14px";
     $(".logo").width(66).height(90); 
     $('header').height('14vh');
   }
