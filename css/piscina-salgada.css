@@ -96,6 +96,10 @@ header nav.desktop-menu li a:hover{
   color: #4B944D;
 }
 
+header nav.mobile-menu li a:hover{
+  color: #4B944D;
+}
+
 
 section.espaco{
   padding: 14vh 4% 2% 4%;
@@ -268,7 +272,7 @@ footer p {
 
 @media screen and (max-width: 822px){
   header{
-    height: 100%;
+   
   }
 
   nav.mobile-menu{
@@ -324,6 +328,16 @@ footer p {
   }
 
   .prev-tempo{
-  display: none;
-}
+    display: none;
+  }
+
+  .rodape-left{
+  /*background-color: red;*/
+    width: 100%;
+  }
+
+  .rodape-right{
+  /*background-color: red;*/
+    width: 100%;
+  }
 }

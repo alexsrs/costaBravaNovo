@@ -93,6 +93,10 @@ header nav.desktop-menu li a:hover{
   color: #4B944D;
 }
 
+header nav.mobile-menu li a:hover{
+  color: #4B944D;
+}
+
 
 /* acaba aqui o menu */
 
@@ -241,11 +245,13 @@ section.oclube .oclube-card{
 }
 
 .one .oclube-card{
-	height: 650px;
+	height: auto;
+	min-height: 650px;
 }
 
 .two .oclube-card{
-	height: 480px;
+	height: auto;
+	min-height: 480px;
 }
 
 .oclube-single a{
@@ -730,7 +736,7 @@ footer p {
 
 @media screen and (max-width: 822px){
 	header{
-		height: 100%;
+		
 	}
 
 	nav.mobile-menu{
@@ -787,5 +793,47 @@ footer p {
 
 	.prev-tempo{
 	display: none;
-}
+	}
+	
+	.half{
+	width: 100%;
+	}
+
+	.quarter{
+		width: 100%;
+	}
+
+	.secao-2 iframe{
+		width: 90%;
+	}
+
+	.side-left{
+		width: 100%;
+	}
+
+	.side-right{
+		width: 100%;
+	}
+
+	.contato-right{
+		width: 100%;
+	}
+
+	.contato-left{
+		width: 100%;
+	}
+
+	.rodape-left{
+	/*background-color: red;*/
+		width: 100%;
+	}
+
+	.rodape-right{
+	/*background-color: red;*/
+		width: 100%;
+	}
+
+
+
+
 }
