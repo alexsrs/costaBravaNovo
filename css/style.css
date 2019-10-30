@@ -248,6 +248,10 @@ section.oclube .oclube-card{
 	height: 480px;
 }
 
+.oclube-single a{
+	text-decoration: none;
+}
+
 
 section.oclube .oclube-image{
 	display: block;
