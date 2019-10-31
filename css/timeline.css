@@ -346,6 +346,9 @@ footer p {
     left: 0%;
   }
 
+section.section-timeline .container {
+  width: 100%;
+}
 
 }
 
@@ -413,6 +416,7 @@ footer p {
   .prev-tempo{
     display: none;
   }
+
 
   .rodape-left{
   /*background-color: red;*/
