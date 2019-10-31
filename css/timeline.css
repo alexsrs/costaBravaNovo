@@ -142,8 +142,27 @@ section.section-timeline{
   width: 100%;
   max-width: 400px;
   height: auto;
-
+  margin-bottom: 4%;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
+
+.content h2{
+  font-size: 20px;
+  color: #f86f00;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.content p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    color: #4D4D4D;
+    text-align: justify;
+    line-height: 175%;
+}
+
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
