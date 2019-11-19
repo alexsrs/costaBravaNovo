@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40941441-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40941441-6');
+</script>
+
 	<title>Costa Brava Clube</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
@@ -288,7 +298,13 @@
 	<section class="contatos">
 		<div class="container">
 			<div class="contato-left">
-				<form id="CadContato" method="POST" action="" name="contato">
+				<?php
+      				include("enviarEmail.php");
+				?>
+
+
+
+				<form id="CadContato" method="POST" action="enviarEmail.php" name="contato" enctype="multipart/form-data">
                                 
                                     <div class="form-half">
                                         <div class="form-group">
@@ -311,14 +327,15 @@
 
                                     <div class="form-single">
                                         <div class="form-group"> 
-                                            <textarea class="form-control" id="message" name="mensagem" placeholder="Mensagem" rows="7" data-error="Infome sua mensagem" required=""></textarea>
+                                            <textarea class="form-control" id="Mensagem" name="mensagem" placeholder="Mensagem" rows="7" data-error="Infome sua mensagem" required=""></textarea>
                                             <div class="help-block with-errors"></div>
                                    		</div><!--form-group-->
                                    	</div><!--form-half-->
 
                                     <div class="submit-button">
                                             
-                                            <input name="contato" type="submit" value="Enviar Mensagem"> 
+                                            <input name="BTEnvia" type="submit" value="Enviar Mensagem"> 
+                                            <input type="reset" name="BTApaga" value="Apagar">
                                            
                                             
                                     </div><!--submit-button-->
