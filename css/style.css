@@ -360,7 +360,7 @@ section.secao-3{
 	width: 50%;
 	float: left;
 	background-color: #4B944D;
-	padding: 70px 2% 143px 2%;
+	padding: 70px 2% 160px 2%;
 	color: white;
 	text-align: left;
 	height: 100%;
@@ -570,9 +570,111 @@ section.secao-3{
 }
 
 /* FIm do Lado ESQUERDO*/
- 
 
 /*FIM DA SEÇÂO EVENTOS*/
+
+
+/*INICIO DA SEÇÂO PARCEIROS*/
+
+
+section.parceiros{
+	background-color: #F2F2F2;
+	padding: 2% 0;
+	
+}
+
+
+.parceiros h3{
+	font-family: 'Gruppo', cursive;
+	font-size: 32px;
+	color: #4B944D;;
+	text-align: left;
+	padding: 2% 0%;
+}
+
+.parceiros p{
+	font-family: 'Noto Sans KR', sans-serif;
+    
+    font-size: 16px;
+    color: #4D4D4D;
+    text-align: justify;
+   
+    line-height: 175%;
+}
+
+.parceiros img{
+	padding: 2% 0% 0% 0%;
+	width:100%;
+	max-width:300px;
+	
+}
+
+.row {
+   text-align: center;
+  
+}
+
+
+
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+}
+
+.column-logo {
+  float: left;
+  width: 100%;
+}
+
+.column-logo img{
+	width:15%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  margin: auto;
+  width: 100%;
+ 
+ 
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+
+/*FIM DA SEÇÂO PARCEIROS*/
+
+ 
+
+
 
 section.contatos{
 	display: inline-block;
