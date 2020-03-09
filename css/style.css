@@ -824,7 +824,7 @@ footer p {
 .rodape-left{
 	/*background-color: red;*/
 	width: 50%;
-	float: right;
+	float: left;
 	padding-bottom: 2%;
 	padding-top: 2%;
 }
@@ -832,7 +832,7 @@ footer p {
 .rodape-right{
 	/*background-color: blue;*/
 	width: 50%;
-	float: left;
+	float: right;
 	padding-bottom: 2%;
 	padding-top: 2%;
 }
