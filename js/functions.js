@@ -7,15 +7,16 @@ function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("header").style.fontSize = "14px";
     $(".logo").width(53).height(72); 
-    $('header').height('12vh');
+    $('header').height('14vh');
 
     
+
 
 
   } else {
     document.getElementById("header").style.fontSize = "14px";
     $(".logo").width(66).height(90); 
-    $('header').height('14vh');
+    $('header').height('16vh');
   }
 }
 

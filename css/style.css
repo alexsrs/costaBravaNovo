@@ -22,7 +22,7 @@ html, body{
 header{
 
 width: 100%;
-height: 14vh;
+height: 16vh;
 font-family: Helvetica, sans-serif;
 background-color: #FFFFFF; /* Grey background */
 
@@ -350,21 +350,31 @@ section.secao-2{
 section.secao-3{
 
 	width: 100%;
-	height: auto;
+	margin-bottom: 20px;
+	
 	
 }
 
 /*Lado ESQUERDO*/
 
-.side-left{
+.side-secao-3{
 	width: 50%;
 	float: left;
-	background-color: #4B944D;
-	padding: 70px 2% 160px 2%;
-	color: white;
+	padding: 50px 4% 0px 4%;
 	text-align: left;
-	height: 100%;
+	height: auto;
+	min-height: 785px;
 
+}
+
+.side-left{
+	background-color: #4B944D;
+	color: white;
+}
+
+.side-right{
+	background-color: #DCF2E6;
+	color: #4D4D4D;
 }
 
 
@@ -382,14 +392,6 @@ section.secao-3{
 	color: #FFFFFF;;
 	text-align: left;
 	margin: 2% 0%;
-}
-
-.side-left-wrapper h4 {
-    font-size: 20px;
-    color: #f86f00;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 700;
-    text-align: left;
 }
 
 .side-left-wrapper p{
@@ -410,7 +412,8 @@ section.secao-3{
     display: block;
     position: relative;
     float: left;
-    width: 100%;	
+    width: 100%;
+    height: 100%;	
    /* border: 1px solid #DCF2E6;  */
     background-color: #FFFFFF;
     margin-top: 5%;
@@ -436,18 +439,32 @@ section.secao-3{
 
 .eventos-wrapper .eventos-text{
     float: left;
-    padding: 4% 4% 4% 40%;
+    padding: 4% 4% 4% 30%;
     height: auto;
+    width: 100%;
    }
+
+
 
 .eventos-text h3{
 	color: #4D4D4D;
+	font-size: 24px;
+}
+
+.eventos-text h4 {
+    font-size: 16px;
+    color: #f86f00;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    text-align: left;
 }
 
 .eventos-text p{
 	color: #4D4D4D;
 	line-height: 175%;
 	font-size: 14px;
+	text-align: left;
+	padding: 1%;
 }
 
 /* FIm do Lado ESQUERDO*/
@@ -455,15 +472,7 @@ section.secao-3{
 
 /*Lado DIREITO*/
 
-.side-right{
-	width: 50%;
-	float: left;
-	background-color: #DCF2E6;
-	padding: 50px 2% 50px 2%;
-	color: #4D4D4D;
-	text-align: left;
-	height: auto;
-}
+
 
 .side-right h3{
 
@@ -489,11 +498,13 @@ section.secao-3{
 
 .aconteceu {
 	/*max-width: 600px;*/
-	padding-left: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
 	max-width: 600px;
 	float: left;
 	height: 100%;
 	box-sizing: border-box;
+
 }
 
 .aconteceu-wrapper{
@@ -510,17 +521,23 @@ section.secao-3{
 	max-width: 600px;
 	padding-right: 30px;
 	text-align:center;
+	width: auto;
 }
 
 .aconteceu-image{ 
-	margin: 4% 20% 0 20%;
-	width: 60%;
+	margin: 2% 20% 2% 20%;
 	background-color: #DCF2E6;
-	height: 260px; 
+	min-height: 260px;
 	background-position: center; 
 	background-repeat: no-repeat; 
 	background-size: contain; 
 	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75); 
+
+
+
+
+
+
 }
 
 .aconteceu-single h4{ 
@@ -569,112 +586,12 @@ section.secao-3{
 	top:1px;
 }
 
+
+
+
 /* FIm do Lado ESQUERDO*/
 
 /*FIM DA SEÇÂO EVENTOS*/
-
-
-/*INICIO DA SEÇÂO PARCEIROS*/
-
-
-section.parceiros{
-	background-color: #F2F2F2;
-	padding: 2% 0;
-	
-}
-
-
-.parceiros h3{
-	font-family: 'Gruppo', cursive;
-	font-size: 32px;
-	color: #4B944D;;
-	text-align: left;
-	padding: 2% 0%;
-}
-
-.parceiros p{
-	font-family: 'Noto Sans KR', sans-serif;
-    
-    font-size: 16px;
-    color: #4D4D4D;
-    text-align: justify;
-   
-    line-height: 175%;
-}
-
-.parceiros img{
-	padding: 2% 0% 0% 0%;
-	width:100%;
-	max-width:300px;
-	
-}
-
-.row {
-   text-align: center;
-  
-}
-
-
-
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33%;
-}
-
-.column-logo {
-  float: left;
-  width: 100%;
-}
-
-.column-logo img{
-	width:15%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  margin: auto;
-  width: 100%;
- 
- 
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-
-
-
-/*FIM DA SEÇÂO PARCEIROS*/
-
- 
-
-
 
 section.contatos{
 	display: inline-block;
