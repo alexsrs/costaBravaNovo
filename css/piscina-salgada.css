@@ -102,7 +102,7 @@ header nav.mobile-menu li a:hover{
 
 
 section.espaco{
-  padding: 14vh 4% 2% 4%;
+  padding: 20vh 4% 2% 4%;
   text-align: center;
 
 }
@@ -194,6 +194,8 @@ width: 100%;
 
 
 
+
+
 footer{
    
     width: 100%;
@@ -265,6 +267,7 @@ footer p {
   .timeline::after {
     left: 31px;
   }
+
 
 /* Full-width containers */
   .container {
@@ -338,6 +341,11 @@ footer p {
     text-decoration: none;
     color: black;
   }
+
+.slick-arrow{
+  display: none;
+}
+
 
   section.secao-1{
     padding: 40px 2%;

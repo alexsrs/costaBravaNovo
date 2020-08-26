@@ -2,7 +2,7 @@ $(function() {
 	
 	$('nav a').click(function(){
 		var href = $(this).attr('href');
-		var offSetTop = $(href).offset().top-140;
+		var offSetTop = $(href).offset().top-160;
 		$('html,body').animate({'scrollTop':offSetTop});
 		return false;
 	})

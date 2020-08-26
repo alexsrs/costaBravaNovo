@@ -7,6 +7,7 @@
 
 html, body{
 	height: 100%;
+	
 	}
 
 .container{
@@ -25,7 +26,6 @@ width: 100%;
 height: 16vh;
 font-family: Helvetica, sans-serif;
 background-color: #FFFFFF; /* Grey background */
-
 font-size: 14px; /* Big font size */
 font-weight: bold;
 position: fixed; /* Fixed position - sit on top of the page */
@@ -246,12 +246,12 @@ section.oclube .oclube-card{
 
 .one .oclube-card{
 	height: auto;
-	min-height: 650px;
+	min-height: 600px;
 }
 
 .two .oclube-card{
 	height: auto;
-	min-height: 540px;
+	min-height: 566px;
 }
 
 .oclube-single a{
@@ -267,12 +267,15 @@ section.oclube .oclube-image{
 	background-position: center;
 	transition: .5s ease;
   	backface-visibility: hidden;
-
+  	position:relative; 
+  	top:0px; 
+  	left:0px;
 }
+
 
 section.oclube .oclube-texto{	
 	background-color: white;
-	padding: 0 4%;
+	padding: 22px;
 
 	
 }
@@ -310,12 +313,19 @@ section.oclube .oclube-wrapper p{
 	opacity: 1;
 }
 
+.oclube-card:hover .saiba-icon{
+	display: block;
+	opacity: 1;
+}
+
 .saiba-icon {
-	top: 0;
-	left: 0;
+	display: none;
   	color: white;
-  
- 
+  	position:absolute;
+  	top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
 }
 
 
@@ -348,9 +358,9 @@ section.secao-2{
 /*Inicio da seção eventos*/
 
 section.secao-3{
-
+	display: inline-block;
 	width: 100%;
-	margin-bottom: 20px;
+	
 	
 	
 }
@@ -359,31 +369,28 @@ section.secao-3{
 
 .side-secao-3{
 	width: 50%;
-	float: left;
+	
 	padding: 50px 4% 0px 4%;
-	text-align: left;
+	text-align: center;
 	height: auto;
-	min-height: 785px;
+	min-height: 700px;
 
 }
 
 .side-left{
 	background-color: #4B944D;
 	color: white;
+	float: left;
 }
 
 .side-right{
 	background-color: #DCF2E6;
 	color: #4D4D4D;
-}
-
-
-.side-left-wrapper{
-	max-width: 600px;
 	float: right;
-	padding-right: 30px;
-	height: 100%;
 }
+
+
+
 
 .side-left-wrapper h3{
 
@@ -414,6 +421,7 @@ section.secao-3{
     float: left;
     width: 100%;
     height: 100%;	
+    min-height: 140px;
    /* border: 1px solid #DCF2E6;  */
     background-color: #FFFFFF;
     margin-top: 5%;
@@ -428,6 +436,7 @@ section.secao-3{
     z-index: 1;
     width: 40%;
 	height: 100%;
+	min-height: 140px;
     background-position: left;
     -moz-background-size: contain;
     -o-background-size: cover;
@@ -439,7 +448,7 @@ section.secao-3{
 
 .eventos-wrapper .eventos-text{
     float: left;
-    padding: 4% 4% 4% 30%;
+    padding: 4% 4% 4% 165px;
     height: auto;
     width: 100%;
    }
@@ -472,7 +481,12 @@ section.secao-3{
 
 /*Lado DIREITO*/
 
-
+.side-left-wrapper{
+	max-width: 600px;
+	float: right;
+	padding-left: 30px;
+	height: 100%;
+}
 
 .side-right h3{
 
@@ -497,7 +511,7 @@ section.secao-3{
 
 
 .aconteceu {
-	/*max-width: 600px;*/
+	text-align: center;
 	padding-left: 15px;
 	padding-right: 15px;
 	max-width: 600px;
@@ -511,8 +525,6 @@ section.secao-3{
 	text-align: center;
 	width: 100%;
 	height: auto;
-	
-
 }
 
 .aconteceu-single{
@@ -527,11 +539,11 @@ section.secao-3{
 .aconteceu-image{ 
 	margin: 2% 20% 2% 20%;
 	background-color: #DCF2E6;
-	min-height: 260px;
+	min-height: 180px;
 	background-position: center; 
 	background-repeat: no-repeat; 
-	background-size: contain; 
-	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75); 
+	background-size: auto; 
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 
 
 
@@ -683,10 +695,23 @@ section.contatos{
 }
 .map{
 	text-align: center;
+	position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+    margin-left: 100px;
+
 }
 
 .mapa iframe{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 	box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.25);
+	max-width: 500px;
+    max-height: 400px;
 }
 
 footer{
@@ -754,13 +779,13 @@ footer p {
 	padding-top: 2%;
 }
 
-@media screen and (max-width: 822px){
+@media screen and (max-width: 960px){
 	header{
-		
+		min-height: 106px;
 	}
 
 	.container{
-	max-width: 822px;
+	max-width: 960px;
 	
 }
 
@@ -834,10 +859,17 @@ footer p {
 
 	.side-left{
 		width: 100%;
+		float: left;
+		min-height: 660px;
+
+	}
+	.side-left-wrapper{
+		float: left;
 	}
 
 	.side-right{
 		width: 100%;
+		float: left;
 	}
 	
 	.aconteceu{
@@ -846,11 +878,19 @@ footer p {
 
 
 	.contato-right{
+		padding-top: 40px;
 		width: 100%;
 	}
 
 	.contato-left{
 		width: 100%;
+	}
+
+	.map{
+	
+   		margin-left: 20px;
+    	margin-right: 20px;
+
 	}
 
 	.rodape-left{
