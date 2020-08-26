@@ -10,7 +10,7 @@ $CONFIG = array(
     // -------------------------------------------------------------
 
     // Primary Instagram login
-    'LOGIN' => 'fotokto_ru',
+    'LOGIN' => 'oficialcostabravaclube',
 
     // Primary hashtags
     // Separate hashtags by a comma. For example: girl, man
@@ -66,17 +66,17 @@ $CONFIG = array(
     // -------------------------------------------------------------
 
     // Random order of pictures [ true / false ]
-    'imgRandom' => true,
+    'imgRandom' => false,
 
     // How many pictures the widget will get from Instagram?
-    'imgCount' => 30,
+    'imgCount' => 8,
 
     // -------------------------------------------------------------
     // Cache
     // -------------------------------------------------------------
 
     // Cache expiration time (hours)
-    'cacheExpiration' => 6,
+    'cacheExpiration' => 1,
 
     // Skip cache data [ true / false ]
     // So mean, requests to Instagram API will be sending every time.
@@ -118,7 +118,7 @@ $CONFIG = array(
 
     // Default language [ ru / en / ua ] or something else from the lang directory.
     // This option may no effect if you set a lang by $_GET variable
-    'langDefault' => 'ru',
+    'langDefault' => 'en',
 
     // Possible language values.
     // If you are using another language, add the lang filename in this array without extension.
